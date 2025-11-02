@@ -1,0 +1,31 @@
+{
+  "name": "ai-inference-middleware",
+  "version": "1.0.0",
+  "description": "This project will implement middleware to run multiple AI models concurrently using: - CPU parallelism (OpenMP / multithreading) - GPU acceleration (CUDA / PyTorch) - Distributed nodes (MPI / gRPC) - TypeScript CLI and dashboard for user interaction",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node server.ts",
+    "remote": "ts-node middleware/remoteNode.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.1",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "axios": "^1.13.1",
+    "chalk": "^5.6.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}
